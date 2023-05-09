@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currywurst Blog</title>
+  <link rel="stylesheet" href="css/Styles.css">
+
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #b7bfc2 0%, #e1e9ec 26%, #fff9f4 32%, #d4dcdf 38%, #ccd4d7 66%, #d8e0e3 71%, #ced8da 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+  #switch {
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    left: 9999px;
+  }
+
+  {
+    font-family: Arial, sans-serif
+  ;
+    margin: 0
+  ;
+    padding: 20px
+  ;
+  }
+
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+
+</style>
+
+<body>
+<header id="header">
+  <h1>TLDR News;</h1>
+</header>
+<main>
+  <article>
+    <h2 id = "article1">Netflix: Migrating critical traffic at scale with no downtime (10 minute read)</h2>
+    <p class = "content1">System migrations at the scale of Netflix can be very tricky - they need to seamlessly transition the traffic to
+      the upgraded architecture without adding any delay or interruptions to streaming for hundreds of millions of
+      customers.
+      This blog examines the tools and strategies Netflix has utilized to achieve this goal by using a technique called
+      replay traffic testing.</p>
+  </article>
+
+  <article>
+    <h2 id = "article2">What is a Vector Database? (12 minute read)</h2>
+    <p>Many AI applications that involve large language models or generative AI rely on vector embeddings, a type of
+      data representation that carries within it semantic information that’s critical for the AI to gain understanding
+      and maintain a long-term memory they can draw upon when executing complex tasks.
+      Vector databases offer optimized storage and querying capabilities for embeddings.
+      They have the capabilities of a traditional database that are absent in standalone vector indexes and the
+      specialization of dealing with vector embeddings, which traditional scalar-based databases lack.</p>
+  </article>
+</main>
+</body>
+</html>
